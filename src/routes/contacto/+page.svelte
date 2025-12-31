@@ -1,6 +1,9 @@
 <script lang="ts">
-	const phoneInternational = '519664761447';
-	const phoneDisplay = '+51 966 476 1447';
+	const phoneInternational = '526647614470';
+	const phoneDisplay = '+52 664 761 4470';
+
+	const instagram = 'https://www.instagram.com/intalaciones_donaldo?igsh=bGY2eDVoaHBieGFv';
+	const tiktok = 'https://www.tiktok.com/@intalacionesdonaldo?_r=1&_t=ZS-92cNlHckDeK';
 
 	let nombre = '';
 	let mensaje = '';
@@ -17,7 +20,8 @@
 		<h1 class="text-4xl font-black">Contacto</h1>
 
 		<p class="mt-3 text-slate-300">
-			Escríbeme por WhatsApp y dime ubicación + metros cuadrados para cotizar rápido.
+			Escríbeme por WhatsApp y dime <strong>ubicación</strong> y
+			<strong>metros cuadrados</strong> para cotizar rápido.
 		</p>
 
 		<div class="mt-6 rounded-3xl border border-white/10 bg-slate-950/30 p-6">
@@ -35,10 +39,35 @@
 				</a>
 
 				<a
-					href="tel:+519664761447"
+					href="tel:+526647614470"
 					class="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 font-semibold hover:bg-white/10 transition"
 				>
 					Llamar
+				</a>
+			</div>
+		</div>
+
+		<!-- Redes -->
+		<div class="mt-6 rounded-3xl border border-white/10 bg-slate-950/30 p-6">
+			<p class="text-sm text-slate-300">Síguenos en redes</p>
+
+			<div class="mt-4 flex flex-wrap gap-3">
+				<a
+					href={instagram}
+					target="_blank"
+					rel="noreferrer"
+					class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 font-semibold hover:bg-white/10 transition"
+				>
+					📸 Instagram
+				</a>
+
+				<a
+					href={tiktok}
+					target="_blank"
+					rel="noreferrer"
+					class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 font-semibold hover:bg-white/10 transition"
+				>
+					🎵 TikTok
 				</a>
 			</div>
 		</div>
@@ -51,8 +80,8 @@
 			<span class="text-sm text-slate-300">Tu nombre</span>
 			<input
 				bind:value={nombre}
-				placeholder="Ej: Juan Pérez"
 				class="mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3 outline-none focus:border-orange-400/60"
+				placeholder="Ej: Juan Pérez"
 			/>
 		</label>
 
@@ -61,8 +90,8 @@
 			<textarea
 				bind:value={mensaje}
 				rows="6"
-				placeholder="Ej: Baño 12 m², en (distrito/ciudad). Quiero porcelanato en paredes y piso."
 				class="mt-2 w-full rounded-2xl border border-white/10 bg-slate-950/30 px-4 py-3 outline-none focus:border-orange-400/60"
+				placeholder="Ej: Baño 12 m², en Tijuana. Porcelanato en piso y paredes."
 			/>
 		</label>
 
@@ -74,9 +103,5 @@
 		>
 			Enviar por WhatsApp
 		</a>
-
-		<p class="mt-3 text-sm text-slate-400">
-			Consejo: agrega fotos del área para una mejor cotización.
-		</p>
 	</div>
 </section>
