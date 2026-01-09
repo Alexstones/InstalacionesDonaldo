@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 
-	const phoneInternational = '519664761447';
+	const phoneInternational = '526647614470';
 	const waLink = `https://wa.me/${phoneInternational}?text=${encodeURIComponent(
 		'Hola! Quiero una cotización para instalación de porcelanato/cerámicas.'
 	)}`;
